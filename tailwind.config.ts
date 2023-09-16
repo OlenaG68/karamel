@@ -11,6 +11,11 @@ const config: Config = {
             backgroundImage: {
                 "first-block-bg": "url(/images/first-block-bg.jpg)",
                 "mission-bg": "url(/images/mission-bg.jpg)",
+                "ads-bg": "url(/images/ads.jpg)",
+            },
+            colors: {
+                black: "#000000",
+                white: "#ffffff",
             },
             container: {
                 center: true,

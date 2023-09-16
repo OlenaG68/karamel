@@ -3,7 +3,7 @@ import Image from "next/image";
 const OurMission = () => {
     return (
         <section className=" bg-mission-bg bg-cover  bg-center">
-            <div className="container flex flex-col lg:flex-row gap-16 items-center py-[100px] justify-around">
+            <div className="container px-3 md:px-0 flex flex-col lg:flex-row gap-16 items-center py-[100px] justify-around">
                 {" "}
                 <div className=" ">
                     <h1 className="text-center text-2xl font-semibold">
@@ -21,16 +21,13 @@ const OurMission = () => {
                         anim id est laborum.
                     </p>
                 </div>
-                <div className=" basis-2/3">
-                    {" "}
-                    <Image
-                        src="/images/first-block.jpg"
-                        width={550}
-                        height={300}
-                        alt="kids"
-                        className="rounded-tl-[50px]  rounded-br-[50px] rounded-tr-[10px] rounded-bl-[10px] m-auto max-w-[700px]"
-                    />
-                </div>
+                <Image
+                    src="/images/first-block.jpg"
+                    width={520}
+                    height={200}
+                    alt="kids"
+                    className="rounded-tl-[50px]  rounded-br-[50px] rounded-tr-[10px] rounded-bl-[10px] m-auto "
+                />
             </div>
         </section>
     );
