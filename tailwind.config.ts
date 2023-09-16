@@ -9,7 +9,8 @@ const config: Config = {
     theme: {
         extend: {
             backgroundImage: {
-                "first-block": "url(/images/first-block-k.png)",
+                "first-block-bg": "url(/images/first-block-bg.jpg)",
+                "mission-bg": "url(/images/mission-bg.jpg)",
             },
             container: {
                 center: true,
