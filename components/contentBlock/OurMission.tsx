@@ -23,7 +23,10 @@ const OurMission = () => {
         autoplaySpeed: 3000,
     };
     return (
-        <section className=" bg-mission-bg bg-cover  bg-center relative">
+        <section
+            id="about-us"
+            className=" bg-mission-bg bg-cover  bg-center relative"
+        >
             <div className="absolute  bg-purple-900 bg-opacity-75 w-full h-full" />
             <div className="container px-3 md:px-0 flex flex-col lg:flex-row gap-16 items-center py-[150px] justify-around">
                 {" "}

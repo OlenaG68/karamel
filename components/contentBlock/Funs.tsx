@@ -91,7 +91,7 @@ const Funs = () => {
         setSelectedTab(tab);
     };
     return (
-        <section className="container px-3 md:px-0 py-[150px]">
+        <section id="funs" className="container px-3 md:px-0 py-[150px]">
             <h1 className="text-center text-3xl lg:text-5xl font-semibold ">
                 Розваги в Карамельці
             </h1>

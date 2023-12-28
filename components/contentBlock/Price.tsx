@@ -21,7 +21,7 @@ const Price = () => {
     ];
 
     return (
-        <section className="container py-[150px] px-3 md:px-0">
+        <section id="price" className="container py-[150px] px-3 md:px-0">
             <h1 className="text-center text-3xl lg:text-5xl font-semibold ">
                 Наші тарифи
             </h1>
