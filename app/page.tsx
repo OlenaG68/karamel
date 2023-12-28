@@ -14,9 +14,9 @@ export default function Home() {
             <ContactForm />
             <OurMission />
             <Funs />
-            <ContactForm />
             <Celebrate />
             <Price />
+            <ContactForm />
         </main>
     );
 }

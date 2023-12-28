@@ -8,7 +8,7 @@ const Services = () => {
             id: 1,
             color: "#67A3D9",
             img: "/icons/bezlim.png",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+            desc: "Ідеальний варіант зробити дитину щасливою на всі сто - дати їй можливість бавитись стільки часу - скільки вона хоче. Хочемо, щоб кожна дитина насолоджувалась щасливим дитинством, щоб прийшовши до нас одного разу, вам захотілось завітати ще і ще!",
         },
         {
             title: "Святкування дня народження",
@@ -29,17 +29,19 @@ const Services = () => {
             id: 4,
             color: "#F8B7CD",
             img: "/icons/group.png",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+            desc: "Для груп дітей від 15 осіб даруємо у будні знижку 30% Для того щоб весело провести час з друзями,однокласниками потрібно зарезервувати дату візиту  не пізніше ніж, за 1 день. Кожні 10 дітей обов'язково мають супроводжуватись мінімум одним дорослим. Акція не розповсюджується на святкування днів народжень та випускних.",
         },
     ];
     return (
         <section className="py-[100px] container">
-            <h1 className="text-center text-2xl font-semibold">Наші послуги</h1>
-            <div className="flex flex-col px-3 md:px-0 lg:flex-row  gap-[75px]  lg:gap-5 mt-24 justify-around">
+            <h1 className="text-center text-3xl lg:text-5xl font-semibold">
+                Наші послуги
+            </h1>
+            <div className=" grid grid-cols-1 px-3 md:px-0 md:grid-cols-2 xl:grid-cols-4  gap-[75px]  lg:gap-5 mt-24 justify-around">
                 {services.map((service) => (
                     <div
                         key={service.id}
-                        className={`text-center drop-shadow-md flex flex-col items-center justify-around rounded-lg px-6 py-6`}
+                        className={`text-center drop-shadow-md  rounded-lg px-6 py-6`}
                         style={{ background: service.color }}
                     >
                         <Image
@@ -47,10 +49,10 @@ const Services = () => {
                             height={70}
                             alt="icon"
                             src={service.img}
+                            className="m-auto"
                         />
 
                         <div>
-                            {" "}
                             <h3 className="text-lg font-medium  mt-5 ">
                                 {service.title}
                             </h3>

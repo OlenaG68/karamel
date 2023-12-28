@@ -8,33 +8,51 @@ const Funs = () => {
             title: "Батутна арена",
             id: 1,
             border: "#C8E7F5",
-            desc: "1Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            desc: "Наші батути допоможуть дітям відірватись по повній, дострибнути до стелі та відчути себе супергероєм. Вистрибати надлишок енергії, потренувати м'язи та рівновагу, а ще підняти настрій!",
+        },
+        {
+            title: "Just Dance",
+            id: 2,
+            border: "#F6D2E0",
+            desc: "Це улюблений атракціон усіх фанатів танців та дискотек.	Збирайте команду, і починайте батл: за допомогою спеціальних датчиків танцювальний автомат відстежує кожен ваш рух і виставляє бали Переможе той, хто танцює краще за всіх! 	",
+        },
+        {
+            title: "Тарзанка",
+            id: 3,
+            border: "#C8E7F5",
+            desc: "Улюблена локація усіх поціновувачів екстріму та пригод. Дарує стрімкий політ, море емоцій та сміху. ",
         },
         {
             title: "Ніндзя парк",
-            id: 2,
-            border: "#F6D2E0",
-            desc: "2Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        },
-        {
-            title: "Зона Play Station",
-            id: 3,
-            border: "#C8E7F5",
-            desc: "3Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-        },
-        {
-            title: "Ще якась зона",
             id: 4,
             border: "#F8B7CD",
-            desc: "4Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+            desc: "Поєднання екстриму та комфорту, безпеки та пригод забезпечує незабутні відчуття. Саме тут діти відчувають себе справжніми ніндзя. Долають перешкоди різної складності, тренуються і заряджаються позитивом та адреналіном",
+        },
+        {
+            title: "Лабіринт та басейн з кульками",
+            id: 5,
+            border: "#C8E7F5",
+            desc: "Справжній рай  для істинних геймерів. Зручні крісло-мішки, джойстики, великі екрани, і безліч крутих відеоігор — одна з улюблених розваг підлітків і дорослих. Вмощуйтесь зручніше та вперед назустріч пригодам.",
+        },
+        {
+            title: "Аерохокей",
+            id: 6,
+            border: "#F6D2E0",
+            desc: "Гра для всієї родини, у якій немає вікових обмежень! Швидка, рухлива,  азартна та нереально весела. І як круто грати з батьками, і перемагати.",
+        },
+        {
+            title: "Баскетбол для дітей та дорослих.",
+            id: 7,
+            border: "#C8E7F5",
+            desc: "Спортивна гра у міні-форматі. Берете м’яч, уявляєте себе професійним баскетболістом, кидаєте в кільце та перемагаєте!",
         },
     ];
     const selectTab = (tab: number) => {
         setSelectedTab(tab);
     };
     return (
-        <section className="container px-3 md:px-0 py-[100px]">
-            <h1 className="text-center text-2xl font-semibold ">
+        <section className="container px-3 md:px-0 py-[150px]">
+            <h1 className="text-center text-3xl lg:text-5xl font-semibold ">
                 Розваги в Карамельці
             </h1>
             <div className="mt-24 flex flex-col md:flex-row gap-14">

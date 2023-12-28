@@ -2,10 +2,10 @@ import React from "react";
 
 const Celebrate = () => {
     return (
-        <section className=" bg-ads-bg  bg-cover bg-center">
+        <section className=" bg-ads-bg  bg-cover  bg-center">
             <div className=" py-[150px] bg-black bg-opacity-50 w-full h-full">
                 <div className="container text-center">
-                    <h1 className=" text-4xl text-white font-bold">
+                    <h1 className=" text-3xl lg:text-5xl  text-white font-bold leading-snug">
                         Святкуйте найважливіші дні своєї дитини в Карамельці!
                     </h1>
                     <p className=" text-lg text-white mt-16">
