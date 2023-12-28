@@ -1,5 +1,9 @@
 "use client";
 import React, { useState } from "react";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import Image from "next/image";
 
 const Funs = () => {
     const [selectedTab, setSelectedTab] = useState(1);
@@ -9,44 +13,78 @@ const Funs = () => {
             id: 1,
             border: "#C8E7F5",
             desc: "Наші батути допоможуть дітям відірватись по повній, дострибнути до стелі та відчути себе супергероєм. Вистрибати надлишок енергії, потренувати м'язи та рівновагу, а ще підняти настрій!",
+            images: [
+                "/images/mission/IMG_3876.jpg",
+                "/images/mission/IMG_3877.jpg",
+                "/images/mission/IMG_3880.jpg",
+                "/images/mission/IMG_3894.jpg",
+                "/images/mission/IMG_3895.jpg",
+            ],
         },
         {
             title: "Just Dance",
             id: 2,
             border: "#F6D2E0",
             desc: "Це улюблений атракціон усіх фанатів танців та дискотек.	Збирайте команду, і починайте батл: за допомогою спеціальних датчиків танцювальний автомат відстежує кожен ваш рух і виставляє бали Переможе той, хто танцює краще за всіх! 	",
+
+            images: [
+                "/images/mission/IMG_3876.jpg",
+                "/images/mission/IMG_3877.jpg",
+                "/images/mission/IMG_3880.jpg",
+                "/images/mission/IMG_3894.jpg",
+                "/images/mission/IMG_3895.jpg",
+            ],
         },
         {
             title: "Тарзанка",
             id: 3,
             border: "#C8E7F5",
             desc: "Улюблена локація усіх поціновувачів екстріму та пригод. Дарує стрімкий політ, море емоцій та сміху. ",
+            images: [
+                "/images/mission/IMG_3876.jpg",
+                "/images/mission/IMG_3877.jpg",
+                "/images/mission/IMG_3880.jpg",
+                "/images/mission/IMG_3894.jpg",
+                "/images/mission/IMG_3895.jpg",
+            ],
         },
         {
             title: "Ніндзя парк",
             id: 4,
             border: "#F8B7CD",
             desc: "Поєднання екстриму та комфорту, безпеки та пригод забезпечує незабутні відчуття. Саме тут діти відчувають себе справжніми ніндзя. Долають перешкоди різної складності, тренуються і заряджаються позитивом та адреналіном",
+            images: [
+                "/images/mission/IMG_3876.jpg",
+                "/images/mission/IMG_3877.jpg",
+                "/images/mission/IMG_3880.jpg",
+                "/images/mission/IMG_3894.jpg",
+                "/images/mission/IMG_3895.jpg",
+            ],
         },
         {
             title: "Лабіринт та басейн з кульками",
             id: 5,
             border: "#C8E7F5",
             desc: "Справжній рай  для істинних геймерів. Зручні крісло-мішки, джойстики, великі екрани, і безліч крутих відеоігор — одна з улюблених розваг підлітків і дорослих. Вмощуйтесь зручніше та вперед назустріч пригодам.",
-        },
-        {
-            title: "Аерохокей",
-            id: 6,
-            border: "#F6D2E0",
-            desc: "Гра для всієї родини, у якій немає вікових обмежень! Швидка, рухлива,  азартна та нереально весела. І як круто грати з батьками, і перемагати.",
-        },
-        {
-            title: "Баскетбол для дітей та дорослих.",
-            id: 7,
-            border: "#C8E7F5",
-            desc: "Спортивна гра у міні-форматі. Берете м’яч, уявляєте себе професійним баскетболістом, кидаєте в кільце та перемагаєте!",
+            images: [
+                "/images/mission/IMG_3876.jpg",
+                "/images/mission/IMG_3877.jpg",
+                "/images/mission/IMG_3880.jpg",
+                "/images/mission/IMG_3894.jpg",
+                "/images/mission/IMG_3895.jpg",
+            ],
         },
     ];
+
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+    };
     const selectTab = (tab: number) => {
         setSelectedTab(tab);
     };
@@ -81,7 +119,29 @@ const Funs = () => {
                     {funs.map((fun) => (
                         <>
                             {fun.id === selectedTab && (
-                                <p className="text-center">{fun.desc}</p>
+                                <div className="w-full">
+                                    <div className="m-auto max-w-[320px] md:max-w-[520px]">
+                                        <Slider {...settings}>
+                                            {fun.images.map((image, index) => (
+                                                <div
+                                                    key={index}
+                                                    className="p-1"
+                                                >
+                                                    <Image
+                                                        src={image}
+                                                        width={250}
+                                                        height={200}
+                                                        alt="kids"
+                                                        className="rounded-xl m-auto "
+                                                    />
+                                                </div>
+                                            ))}
+                                        </Slider>
+                                    </div>
+                                    <p className="text-center mt-5 text-lg font-medium">
+                                        {fun.desc}
+                                    </p>
+                                </div>
                             )}
                         </>
                     ))}

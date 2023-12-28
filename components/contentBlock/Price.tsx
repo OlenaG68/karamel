@@ -5,15 +5,15 @@ const Price = () => {
         {
             title: "Будні",
             prices: [
-                { title: "1 година", id: 1, price: "170грн" },
-                { title: "Безліміт", id: 2, price: "220грн" },
+                { title: "1 година", id: 1, price: "120грн" },
+                { title: "Безліміт", id: 2, price: "180грн" },
             ],
             id: 1,
         },
         {
             title: "Вихідні та святкові",
             prices: [
-                { title: "1 година", id: 1, price: "170грн" },
+                { title: "1 година", id: 1, price: "150грн" },
                 { title: "Безліміт", id: 2, price: "220грн" },
             ],
             id: 2,

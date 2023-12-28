@@ -9,7 +9,7 @@ const config: Config = {
     theme: {
         extend: {
             backgroundImage: {
-                "first-block-bg": "url(/images/first-block-bg.jpg)",
+                "first-block-bg": "url(/images/first-block-k.jpg)",
                 "mission-bg": "url(/images/mission-bg.jpg)",
                 "ads-bg": "url(/images/ads.jpg)",
             },

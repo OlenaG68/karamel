@@ -15,14 +15,14 @@ const Services = () => {
             id: 2,
             color: "#F6D2E0",
             img: "/icons/birth.png",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+            desc: "В нас є все для ідеального дитячого свята: аніматори в костюмах улюблених героїв, безліч шоу, майстер-класів, стильні тематичні кімнати, святкове  меню, піньята та топові безлімітні розваги. А для іменинника - подарунковий сертифікат на наступне безкоштовне відвідування!",
         },
         {
             title: "Випускні",
             id: 3,
             color: " #C8E7F5",
             img: "/icons/grads.png",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+            desc: "Для маленьких випускників ми підготували яскраві шоу-програми, різноманітні конкурси, безлімітні розваги, святкове меню, запальну дискотеку, та незабутні враження! Ви обираєте тематику свята - ми створюємо фантастичне святкування!",
         },
         {
             title: "Групові візити",
@@ -44,13 +44,15 @@ const Services = () => {
                         className={`text-center drop-shadow-md  rounded-lg px-6 py-6`}
                         style={{ background: service.color }}
                     >
-                        <Image
-                            width={100}
-                            height={70}
-                            alt="icon"
-                            src={service.img}
-                            className="m-auto"
-                        />
+                        <div>
+                            <Image
+                                width={100}
+                                height={70}
+                                alt="icon"
+                                src={service.img}
+                                className="m-auto"
+                            />
+                        </div>
 
                         <div>
                             <h3 className="text-lg font-medium  mt-5 ">
