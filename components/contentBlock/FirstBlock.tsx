@@ -4,7 +4,7 @@ import React from "react";
 const FirstBlock = () => {
     return (
         <section className="flex flex-col lg:flex-row h-screen items-center justify-center bg-first-block-bg bg-cover bg-center">
-            <div className="container">
+            <div className="container px-3">
                 <h1 className="lg:text-5xl text-3xl font-extrabold -rotate-2 text-center">
                     Улюблений простір розваг для дорослих та дітей
                 </h1>
