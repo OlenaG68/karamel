@@ -84,6 +84,8 @@ const Funs = () => {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
+        nextArrow: undefined,
+        prevArrow: undefined,
     };
     const selectTab = (tab: number) => {
         setSelectedTab(tab);
@@ -120,7 +122,7 @@ const Funs = () => {
                         <>
                             {fun.id === selectedTab && (
                                 <div className="w-full">
-                                    <div className="m-auto max-w-[320px] md:max-w-[520px]">
+                                    <div className="m-auto max-w-[300px] md:max-w-[520px]">
                                         <Slider {...settings}>
                                             {fun.images.map((image, index) => (
                                                 <div
