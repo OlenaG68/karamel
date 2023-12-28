@@ -95,8 +95,8 @@ const Funs = () => {
             <h1 className="text-center text-3xl lg:text-5xl font-semibold ">
                 Розваги в Карамельці
             </h1>
-            <div className="mt-24 flex flex-col md:flex-row gap-14">
-                <div className="flex gap-5 flex-col basis-1/2 w-full">
+            <div className="mt-24 flex flex-col md:flex-row gap-14 px-3">
+                <div className="flex gap-5 flex-col basis-1/2 w-full ">
                     {funs.map((fun) => (
                         <div
                             key={fun.id}

@@ -4,7 +4,7 @@ const Celebrate = () => {
     return (
         <section className=" bg-ads-bg  bg-cover  bg-center">
             <div className=" py-[150px] bg-purple-900 bg-opacity-75 w-full h-full">
-                <div className="container text-center">
+                <div className="container text-center px-3">
                     <h1 className=" text-3xl lg:text-5xl  text-white font-bold leading-snug">
                         Святкуйте найважливіші дні своєї дитини в Карамельці!
                     </h1>
