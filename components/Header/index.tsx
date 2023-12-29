@@ -35,8 +35,10 @@ const Header = () => {
     console.log(navBg);
     return (
         <nav
-            className={` w-full text-black md:text-white bg-white md:bg-transparent  fixed top-0 px-5 z-50 transition ease-in-out ${
-                navBg ? " md:text-black md:bg-white duration-500 " : ""
+            className={` w-full text-black   fixed top-0 px-5 z-50 transition ease-in-out ${
+                navBg
+                    ? " md:text-black md:bg-white duration-500 "
+                    : "md:text-white bg-white md:bg-transparent"
             }`}
         >
             <div className=" w-full py-4 justify-between items-center inline-flex ">
