@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactForm = () => {
     return (
-        <section className="py-[100px] container flex flex-col  items-center justify-center">
+        <section className="py-[50px] container flex flex-col  items-center justify-center">
             <h1 className="text-center text-3xl lg:text-5xl font-semibold">
                 Хочеш забронювати свято? Напиши нам!
             </h1>
@@ -35,7 +35,7 @@ const ContactForm = () => {
                 </div>
             </form>
             <div className="flex justify-center mt-16">
-                <button className=" py-3 px-8 bg-purple-700 rounded-3xl text-white">
+                <button className=" py-3 px-8 bg-purple-700 hover:bg-purple-800 rounded-3xl text-white">
                     Забронювати столик
                 </button>
             </div>

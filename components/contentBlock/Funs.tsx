@@ -100,7 +100,7 @@ const Funs = () => {
                     {funs.map((fun) => (
                         <div
                             key={fun.id}
-                            className={` drop-shadow-md w-full hover:scale-105 py-4 border-2 text-center rounded-lg ${
+                            className={` drop-shadow-md w-full font-medium hover:scale-105 py-4 border-2 text-center rounded-lg ${
                                 fun.id === selectedTab && " scale-105"
                             }`}
                             style={{

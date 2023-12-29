@@ -32,10 +32,11 @@ const Header = () => {
         };
     }, []);
     useClickOutside(mobMenuRef, () => setOpenMobMenu(false));
+    console.log(navBg);
     return (
         <nav
             className={` w-full text-black md:text-white bg-white md:bg-transparent  fixed top-0 px-5 z-50 transition ease-in-out ${
-                navBg ? " text-black bg-white duration-500 " : ""
+                navBg ? " md:text-black md:bg-white duration-500 " : ""
             }`}
         >
             <div className=" w-full py-4 justify-between items-center inline-flex ">
@@ -44,7 +45,7 @@ const Header = () => {
                     {navLink.map((link) => (
                         <div
                             key={link.id}
-                            className=" text-lg font-semibold  leading-tight cursor-pointer"
+                            className=" text-lg font-semibold hover:text-cyan-500  leading-tight cursor-pointer"
                             onClick={() => chooseLink(link.id, link.slug)}
                         >
                             {link.title}
@@ -62,7 +63,7 @@ const Header = () => {
                             {navLink.map((link) => (
                                 <div
                                     key={link.id}
-                                    className=" text-sm font-semibold text-black leading-tight cursor-pointer"
+                                    className=" text-sm font-semibold hover:text-cyan-500 text-black leading-tight cursor-pointer"
                                     onClick={() =>
                                         chooseLink(link.id, link.slug)
                                     }

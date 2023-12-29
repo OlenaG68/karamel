@@ -16,7 +16,7 @@ const FirstBlock = () => {
                     Чекаємо щодня з 11:00-20:00
                 </p>
                 <div className="flex justify-center mt-16">
-                    <button className=" py-3 px-8 bg-teal-500 rounded-3xl text-white">
+                    <button className=" py-3 px-8 bg-teal-500 hover:bg-teal-600 rounded-3xl text-white">
                         Забронювати столик
                     </button>
                 </div>
